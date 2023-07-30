@@ -1,0 +1,19 @@
+var countPrimes = function(n) {
+    let num = 2;
+    let count =0;
+
+    while(num<n){
+            let flag = true
+    for(let i=2; i<num; i++){
+        if(num%i==0){
+            flag = false;
+            break;
+        }
+    }
+    if(flag){
+        count ++
+    }
+    num++
+    }
+    return count
+};
